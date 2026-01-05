@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        
+        .game-container {
+            width: 700px;
+            height: 400px;
+            background-color: lightblue;
+            border: 4px solid black;
+            margin: 50px auto;
+            position: relative;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+       
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .score {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 3px solid black;
+            padding: 8px 15px;
+            color: red;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        
+        .boxes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .box {
+            width: 120px;
+            height: 80px;
+            border: 3px solid black;
+            background-color: #1fd8d8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .green-text {
+            color: green;
+        }
+
+        
+        .play-btn {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 3px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .play-btn:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="title">Lottery Game</div>
+
+        <div class="score">Score: 0</div>
+
+        <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box green-text"></div>
+        </div>
+
+        <button class="play-btn">Play</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
